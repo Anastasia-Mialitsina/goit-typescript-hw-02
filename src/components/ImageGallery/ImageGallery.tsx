@@ -45,9 +45,9 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({
   return (
     <div className={style.imagegallery}>
       <ul className={style.imagediv}>
-        {images.map((image) => (
+        {images.map((image, index) => (
           <li
-            key={image.id}
+            key={`${image.id}-${index}`}
             onClick={() => onImageClick(image.urls.full, image.alt_description)}
           >
             <img src={image.urls.small} alt={image.alt_description} />
