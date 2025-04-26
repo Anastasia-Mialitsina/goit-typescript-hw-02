@@ -16,7 +16,6 @@
 //   return response.data.results;
 // };
 
-
 // src/api/unsplash-api.ts
 import axios from 'axios';
 
